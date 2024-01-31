@@ -1,0 +1,35 @@
+div.card.mb-3.mt-4.card-jk {
+    background: linear-gradient(to right bottom, #13072E, #3f2182);
+    color: $white;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid transparent;
+    border-image: linear-gradient(#5de0e6, #004aad);
+    border-image-slice: 1;
+    border-radius: 0.8rem !important;
+    background-clip: padding-box;
+}
+h1.jk-title {
+    font-size: 5rem;
+}
+p.card-text.mb-5.jk-text {
+    font-size: 1.5rem;
+    font-family: $primary-font;
+}
+a.nav-link.btn-jk-1 {
+	background: $gradient-color-button;
+	color: $primary;
+	padding: 1vh 2vw;
+	border-radius: 2rem;
+	font-family: $primary-font;
+	font-size: 2rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+div.card.mb-3.mt-4.card-jk img {
+    height: 80%;
+    object-fit: cover;
+    width: 100%;
+}
