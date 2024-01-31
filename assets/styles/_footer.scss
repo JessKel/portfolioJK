@@ -1,0 +1,19 @@
+a.nav-link {
+    color: $white;
+    font-size: 1.5rem;
+    font-family: $primary-font;
+}
+a.nav-link:hover {
+    color: $violet3;
+}
+footer.bg-body-tertiary.footer-bloc.fixed-bottom.mt-4 {
+    background-color: $primary !important;
+    color: $white;
+    text-align: center;
+}
+div.footer.mx-auto >a {
+    color: $white;
+}
+.footer-icon {
+    padding: 0.5rem;
+}
