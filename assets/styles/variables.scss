@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+/* Colors */
+$primary: #13072E;
+$secondary: #3f2182;
+$violet1:#7A69E9;
+$violet2: #8C52FF;
+$violet3: #975BCE;
+$white: #FFFFFF;
+$gradient-color-main: linear-gradient(#13072E, #3f2182);
+$gradient-color-button: linear-gradient(#5de0e6, #004aad);
+
+/* Fonts */
+$primary-font: 'Titillium Web', sans-serif;
+$title-font: 'Charm', cursive;
+
+/* Titles and text */
+// Sizes
+$h1-size: 4rem;
+$h2-size: 3rem;
+$h3-size: 2.5rem;
+$h4-size: 2rem;
+$h5-size: 1.5rem;
+$p-size: 1rem;
+$btn-font-size: 1.2rem;
+
+// Colors
+$h-color: $white;
+$p-color: $white;
+$btn-color: $white;
+$btn-color-hover: lighten($btn-color, 30%);
+$button-color-success: #2DCD7A;
+$button-color-alert: #FFA84C;
+$button-color-danger: #EA5455;
+
+// Margins et paddings
+$h1-padding: 2rem;
+
