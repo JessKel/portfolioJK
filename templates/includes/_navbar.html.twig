@@ -1,13 +1,15 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary nav-jk">
+<nav class="navbar navbar-expand-lg nav-jk">
   <div class="container-fluid">
-    <img class="logo" src="{{ asset('build/images/logo_couleur_cadre_noir.jpg') }}" alt="logo">
+    <a href="/">
+        <img class="logo" src="{{ asset('build/images/logo_couleur_cadre_noir.jpg') }}" alt="logo">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerJK">
         <ul class="nav mx-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Qui je suis</a>
+                <a class="nav-link" href="{{ path('presentation_index') }}">Qui je suis</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Mes projets</a>
