@@ -1,12 +1,15 @@
 /* Body */
 #body-jk {
-    background-color:$primary;
+    background-position:center;
+    background-size: cover;
+    background-position: fixed;
 }
 /* Title */
 h1 {
     font-family: $title-font;
     color: $white !important;
     margin-top: 2rem !important;
+    font-size: $h1-size;
 }
 
 /* Buttons */

@@ -11,18 +11,18 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/competence')]
+#[Route('/competence', name: 'competence_')]
 class CompetenceController extends AbstractController
 {
-    #[Route('/', name: 'app_competence_index', methods: ['GET'])]
+    #[Route('/', name: 'index', methods: ['GET'])]
     public function index(CompetenceRepository $competenceRepository): Response
     {
-        return $this->render('competence/index.html.twig', [
+        return $this->render('competence/public/index.html.twig', [
             'competences' => $competenceRepository->findAll(),
         ]);
     }
 
-    #[Route('/new', name: 'app_competence_new', methods: ['GET', 'POST'])]
+    #[Route('/new', name: 'new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $competence = new Competence();
@@ -42,7 +42,7 @@ class CompetenceController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_competence_show', methods: ['GET'])]
+    #[Route('/{id}', name: 'show', methods: ['GET'])]
     public function show(Competence $competence): Response
     {
         return $this->render('competence/show.html.twig', [
@@ -50,7 +50,7 @@ class CompetenceController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}/edit', name: 'app_competence_edit', methods: ['GET', 'POST'])]
+    #[Route('/{id}/edit', name: 'edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Competence $competence, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(CompetenceType::class, $competence);
@@ -68,7 +68,7 @@ class CompetenceController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_competence_delete', methods: ['POST'])]
+    #[Route('/{id}', name: 'delete', methods: ['POST'])]
     public function delete(Request $request, Competence $competence, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete' . $competence->getId(), $request->request->get('_token'))) {

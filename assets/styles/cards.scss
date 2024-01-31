@@ -35,3 +35,25 @@ a.nav-link.btn-jk-2 {
     margin-top: 5rem !important;
     margin-bottom: 1rem;
 }
+
+/* Cards competences */
+div.card.card-small {
+    background: linear-gradient(to right bottom, #13072E, #3f2182);
+    color: $white;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 6rem;
+}
+h3.jk-title3 {
+    font-size: 3rem;
+    margin-top: 0.5rem !important;
+    font-family: $title-font;
+}
+div.card.picture-card {
+    background-color: transparent;
+}
+img.img-logo {
+    max-width: 10rem;
+    max-height: 10rem;
+    padding: 2rem;
+}
