@@ -3,8 +3,23 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-    <div>
-        <h1>Mon Portfolio</h1>
+<div class="card mb-3 mt-4 card-jk border-general">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div class="card-body jk-body-card">
+        <h1 class="jk-title">Jessica Keller</h1>
+        <h4 class="mb-5">Développeuse web & mobile</h4>
+        <p class="card-text mb-5 jk-text">
+            Découvrez l'essence de mon parcours créatif et explorez un monde 
+            où l'imagination rencontre la réalité. Bienvenue dans mon univers, 
+            </br>où chaque projet raconte une histoire unique.
+        </p>
+        <a class="nav-link btn-jk-1" href="{{ path('presentation_index') }}">Découvrez mon univers <i class="bi bi-arrow-right-circle-fill"></i></a>
+      </div>
     </div>
-
+    <div class="col-md-4 d-flex align-items-center">
+      <img src="{{ asset('build/images/jk.png') }}" class="img-fluid rounded-start" alt="photoJK">
+    </div>
+  </div>
+</div>
 {% endblock %}

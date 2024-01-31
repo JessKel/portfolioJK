@@ -1,0 +1,37 @@
+h1.jk-title2 {
+    font-size: 4rem;
+    margin-top: 0.5rem !important;
+}
+h4.card-title {
+    font-family: $primary-font;
+}
+img.dessin {
+    height: 3rem;
+}
+div.carousel-item.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+div.card.card-jk2 {
+    background: linear-gradient(to right bottom, #13072E, #3f2182);
+    color: $white;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    width:70%;
+    height: 70vh;
+}
+a.nav-link.btn-jk-2 {
+	background: $gradient-color-button;
+	color: $primary;
+	padding: 1vh 2vw;
+	border-radius: 2rem;
+	font-family: $primary-font;
+	font-size: 1.5rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 5rem !important;
+    margin-bottom: 1rem;
+}
