@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\PresentationRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\User;
 
 #[ORM\Entity(repositoryClass: PresentationRepository::class)]
 class Presentation
