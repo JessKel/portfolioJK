@@ -23,7 +23,7 @@ div.card.card-jk2 {
     padding-left: 2rem;
     margin-bottom: 2rem;
     width:70%;
-    height: 68vh;
+    max-height: 70vh;
 }
 a.nav-link.btn-jk-2 {
 	background: $gradient-color-button;
@@ -67,8 +67,8 @@ div.card.card-project {
     text-align: left;
     margin-bottom: 2rem;
     padding:0;
-    width: 22rem !important;
-    height: 70vh !important;
+    width: 20vw !important;
+    max-height: 70vh !important;
 }
 h4.jk-title4,
 .modal-title.fs-5 {
@@ -110,5 +110,5 @@ a.link-modal {
     color:$secondary;
 }
 img.card-img-top1 {
-    height: 80vh;
+    max-height: 70vh;
 }

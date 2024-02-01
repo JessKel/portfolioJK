@@ -57,7 +57,7 @@ class ProjectFixtures extends Fixture
             'technology' => 'HTML, CSS, PHP, Bootstrap,  JavaScript, OpenAI',
             'link' => 'https://github.com/JessKel/Hackhathon-L-Oreal.git',
             'picture' => 'build/images/loreal_dashboard.png',
-            'picture2' => 'build/images/loreal_dashboard.png',
+            'picture2' => 'build/images/logoRevealYourself.png',
         ],
         [
             'title' => 'Projet en cours : Wild Series',
