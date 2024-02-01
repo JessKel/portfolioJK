@@ -1,0 +1,35 @@
+#message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#message-form label {
+    color: $white;
+    font-family: $primary-font;
+}
+
+#message-form input,
+#message-form textarea {
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 34vw;
+    font-family: $primary-font;
+    color: $white;
+    background: transparent;
+    border-color: $white;
+}
+
+#message-form button {
+    background: $gradient-color-button;
+    color: $primary;
+    padding: 1vh 2vw;
+    border-radius: 2rem;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 34vw;
+}
+
