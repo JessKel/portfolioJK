@@ -5,7 +5,9 @@
     margin-top: 1rem;
     margin-left: 2rem;
 }
-
+h1.jk-title.text-left {
+    margin-left: 2rem;
+}
 #message-form label {
     color: $white;
     font-family: $primary-font;
@@ -15,7 +17,7 @@
 #message-form textarea {
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
-    width: 34vw;
+    width: 26vw;
     font-family: $primary-font;
     color: $white;
     background: transparent;
@@ -30,6 +32,24 @@
     font-family: $primary-font;
     font-size: 1rem;
     font-weight: bold;
-    width: 34vw;
+    width: 26vw;
 }
 
+/* Registration form */
+h2.subtitle {
+    color: $bleu;
+    margin-left: 2rem;
+    font-weight: normal;
+    font-family: $primary-font;
+}
+button.btn.btn-lg.btn-primary.login {
+    color:$white !important;
+    font-family: $primary-font;
+    font-size: 1.3rem !important;
+}
+a.mdp_forgot {
+    color: $white;
+    margin-top: 1rem;
+    font-family: $primary-font;
+    font-size: 0.8rem;
+}

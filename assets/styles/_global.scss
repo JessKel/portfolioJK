@@ -2,6 +2,14 @@
 #body-jk {
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+/* Main */
+main {
+    flex-grow: 1;
 }
 /* Title */
 h1 {
