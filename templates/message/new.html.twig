@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Message{% endblock %}
+
+{% block body %}
+<h1 class="jk-title text-center">Me contacter</h1>
+  <div class="row g-0">
+    <div class="col-md-6 col-contact" id="message-form">
+        {{ include('message/_form.html.twig') }}
+    </div>
+    <div class="col-md-5 d-flex align-items-left">
+      <img src="{{ asset('build/images/cubesJK.png') }}" class="img-fluid rounded-start" alt="photoJK">
+    </div>
+  </div>
+{% endblock %}
