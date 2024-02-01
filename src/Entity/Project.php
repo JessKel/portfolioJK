@@ -32,6 +32,9 @@ class Project
     #[ORM\ManyToOne(inversedBy: 'project')]
     private ?User $user = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $picture2 = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -105,6 +108,18 @@ class Project
     public function setUser(?User $user): static
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    public function getPicture2(): ?string
+    {
+        return $this->picture2;
+    }
+
+    public function setPicture2(?string $picture2): static
+    {
+        $this->picture2 = $picture2;
 
         return $this;
     }

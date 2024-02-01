@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="jk-title text-center mb-5">Mes projets</h1>
+    {% set cardCount = 0 %}
+    {% for project in projects %}
+        {% if cardCount % 3 == 0 %}
+            <div class="row">
+        {% endif %}
+        <div class="col">
+            <div class="card card-project border-general" style="width: 18rem;">
+                <img src="{{ asset(project.picture2) }}" class="card-img-top1" alt="imageTop">
+                <div class="card-body">
+                    <h4 class="jk-title4">{{ project.title }}</h4>
+                </div>
+                <div class="card-footer mb-3">    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="nav-link btn-jk-project" data-bs-toggle="modal" data-bs-target="#projectModal{{ loop.index }}">
+                      Voir le projet <i class="bi bi-arrow-right-circle-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        {% if cardCount % 3 == 2 or loop.last %}
+            </div>
+        {% endif %}
+        {% set cardCount = cardCount + 1 %}
+    {% endfor %}
+</div>
+
+{% for project in projects %}
+<!-- Modal -->
+<div class="modal fade" id="projectModal{{ loop.index }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="projectModalLabel{{ loop.index }}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="{{ asset(project.picture) }}" class="card-img-top" alt="imageTop">
+      </div>
+      <div class="modal-body">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">{{ project.title }}</h1>
+        <p>Description : </br>{{ project.description }}</p>
+        <p>Technologie utilisée : </br>{{ project.technology }}</p>
+        <a href="{{ project.link }}" class="link-modal">Lien : {{ project.link }}</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary jk-btn2 " data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}
+
+
+
+
