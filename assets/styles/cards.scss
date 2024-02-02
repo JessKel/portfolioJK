@@ -1,9 +1,18 @@
 h1.jk-title2 {
     font-size: 4rem;
     margin-top: 0.5rem !important;
+
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+    }
+
 }
 h4.card-title {
     font-family: $primary-font;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 img.dessin {
     height: 3rem;
@@ -24,6 +33,17 @@ div.card.card-jk2 {
     margin-bottom: 2rem;
     width:70%;
     max-height: 70vh;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        max-height: 100vh;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        padding-left: 1rem;
+        max-height: 100vh;
+    }
 }
 a.nav-link.btn-jk-2 {
 	background: $gradient-color-button;
@@ -32,10 +52,16 @@ a.nav-link.btn-jk-2 {
 	border-radius: 2rem;
 	font-family: $primary-font;
 	font-size: 1.5rem;
-    font-weight: bold;
     width: fit-content;
     margin-top: 5rem !important;
     margin-bottom: 1rem;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-top: 1rem !important;
+    }
 }
 
 /* Cards competences */
@@ -45,6 +71,15 @@ div.card.card-small {
     text-align: left;
     padding-left: 2rem;
     margin-bottom: 6rem;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        padding-left: 1rem;
+    }
 }
 h3.jk-title3 {
     font-size: 3rem;
@@ -69,6 +104,22 @@ div.card.card-project {
     padding:0;
     width: 20vw !important;
     max-height: 70vh !important;
+
+    @media screen and (max-width: 1200px) {
+        width: 30vw !important;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 40vw !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 50vw !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
 }
 h4.jk-title4,
 .modal-title.fs-5 {
@@ -87,7 +138,6 @@ button.nav-link.btn-jk-project {
 	font-family: $primary-font;
 	font-size: 1rem;
     margin-left: auto;
-    font-weight: bold;
     width: fit-content;
 }
 div.modal-content {
@@ -111,4 +161,8 @@ a.link-modal {
 }
 img.card-img-top1 {
     max-height: 70vh;
+
+    @media screen and (max-width: 576px) {
+        max-height: 50vh;
+    }
 }

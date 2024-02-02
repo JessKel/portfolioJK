@@ -4,9 +4,18 @@
     align-items: flex-start;
     margin-top: 1rem;
     margin-left: 2rem;
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0.5rem;
+    }
 }
 h1.jk-title.text-left {
     margin-left: 2rem;
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0.5rem;
+        font-size: 3rem;
+    }
 }
 #message-form label {
     color: $white;
@@ -22,6 +31,10 @@ h1.jk-title.text-left {
     color: $white;
     background: transparent;
     border-color: $white;
+
+    @media screen and (max-width: 768px) {
+        width: 20rem !important;
+    }
 }
 
 #message-form button {
@@ -33,6 +46,10 @@ h1.jk-title.text-left {
     font-size: 1rem;
     font-weight: bold;
     width: 26vw;
+
+    @media screen and (max-width: 768px) {
+        width: 20rem !important;
+    }
 }
 
 /* Registration form */
@@ -41,11 +58,20 @@ h2.subtitle {
     margin-left: 2rem;
     font-weight: normal;
     font-family: $primary-font;
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0;
+    }
 }
 button.btn.btn-lg.btn-primary.login {
     color:$white !important;
     font-family: $primary-font;
     font-size: 1.3rem !important;
+    width: 15vw;
+
+    @media screen and (max-width: 768px) {
+        width: 10rem !important;
+    }
 }
 a.mdp_forgot {
     color: $white;

@@ -5,28 +5,28 @@
 {% block body %}
     <h1 class="jk-title-admin mb-5">Gestion des projets</h1>
 
-    <table class="table">
+    <table class="table custom-table">
         <thead>
             <tr>
-                <th>Titre</th>
-                <th>Description</th>
-                <th>Technologies</th>
-                <th>Lien</th>
-                <th>Logo</th>
-                <th>Image</th>
-                <th>Actions</th>
+                <th class="custom-text3">Titre</th>
+                <th class="custom-text3">Description</th>
+                <th class="custom-text3">Technologies</th>
+                <th class="custom-text3">Lien</th>
+                <th class="custom-text3">Logo</th>
+                <th class="custom-text3">Image</th>
+                <th class="custom-text3">Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for project in projects %}
             <tr>
-                <td>{{ project.title }}</td>
-                <td>{{ project.description }}</td>
-                <td>{{ project.technology }}</td>
-                <td>{{ project.link }}</td>
-                <td>{{ project.picture }}</td>
-                <td>{{ project.picture2 }}</td>
-                <td>
+                <td class="custom-text3">{{ project.title }}</td>
+                <td class="custom-text3">{{ project.description }}</td>
+                <td class="custom-text3">{{ project.technology }}</td>
+                <td class="custom-text3">{{ project.link }}</td>
+                <td class="custom-text3"><img src="{{ asset(project.picture2) }}" width="50px" alt="logo"></td>
+                <td class="custom-text3"><img src="{{ asset(project.picture) }}" width="50px" alt="logo"></td>
+                <td class="custom-text3">
                     <a href="{{ path('project_edit', {'id': project.id}) }}"><i class="bi bi-pencil-square"></i></a>
                     <a href="{{ path('project_delete', {'id': project.id}) }}"><i class="bi bi-trash"></i></a>
                 </td>
