@@ -1,30 +1,36 @@
-{% extends 'base.html.twig' %}
+{% extends 'base-dashboard.html.twig' %}
 
 {% block title %}Competence index{% endblock %}
 
 {% block body %}
-    <h1>Competence index</h1>
+    <h1 class="jk-title-admin mb-5">Gestion des compétences</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
-                <th>Picture</th>
-                <th>actions</th>
+                <th>Image</th>
+                <th>Image2</th>
+                <th>Image3</th>
+                <th>Image4</th>
+                <th>Image5</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for competence in competences %}
             <tr>
-                <td>{{ competence.id }}</td>
                 <td>{{ competence.name }}</td>
                 <td>{{ competence.description }}</td>
                 <td>{{ competence.picture }}</td>
+                <td>{{ competence.picture2 }}</td>
+                <td>{{ competence.picture3 }}</td>
+                <td>{{ competence.picture4 }}</td>
+                <td>{{ competence.picture5 }}</td>
                 <td>
-                    <a href="{{ path('app_competence_show', {'id': competence.id}) }}">show</a>
-                    <a href="{{ path('app_competence_edit', {'id': competence.id}) }}">edit</a>
+                    <a href="{{ path('competence_edit', {'id': competence.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                    <a href="{{ path('competence_delete', {'id': competence.id}) }}"><i class="bi bi-trash"></i></a>
                 </td>
             </tr>
         {% else %}
@@ -34,6 +40,5 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('app_competence_new') }}">Create new</a>
+    <a class="nav-link btn-jk-new" href="{{ path('competence_new') }}">Créer des nouveaux enregistrements <i class="bi bi-arrow-right-circle-fill"></i></a>
 {% endblock %}

@@ -1,11 +1,14 @@
-{% extends 'base.html.twig' %}
+{% extends 'base-dashboard.html.twig' %}
 
 {% block title %}New Presentation{% endblock %}
 
 {% block body %}
-    <h1>Create new Presentation</h1>
-
+<div class="container form-jk-admin">
+    <h1 class="jk-title-admin mb-5">Créer une nouvelle présentation</h1>
     {{ include('presentation/_form.html.twig') }}
-
-    <a href="{{ path('app_presentation_index') }}">back to list</a>
+    </div>
+    <div class="mt-5">
+        <a href="{{ path('presentation_index_admin') }}" class="retour">Retour</a>
+    </div>
+</div>
 {% endblock %}
