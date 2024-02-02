@@ -1,0 +1,30 @@
+/* Tableaux administration du site */
+table.custom-table {
+    background: linear-gradient(to right bottom, #13072E, #3f2182);
+    color: $primary;
+    font-family: $primary-font;
+}
+
+th.custom-text,
+td.custom-text {
+    background: linear-gradient(to right bottom, #7A69E9, #7A69E9);
+    color: $white !important;
+    font-family: $primary-font !important;
+}
+
+th.custom-text2,
+td.custom-text2 {
+    background: linear-gradient(to right bottom, #8C52FF, #8C52FF);
+    color: $white !important;
+    font-family: $primary-font !important;
+}
+
+th.custom-text3,
+td.custom-text3 {
+    background: linear-gradient(to right bottom, #975BCE, #975BCE);
+    color: $white !important;
+    font-family: $primary-font !important;
+}
+a {
+    color:$white !important;
+}

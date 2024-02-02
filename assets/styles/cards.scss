@@ -1,13 +1,24 @@
 h1.jk-title2 {
     font-size: 4rem;
     margin-top: 0.5rem !important;
+
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+    }
+
 }
 h4.card-title {
     font-family: $primary-font;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 img.dessin {
     height: 3rem;
 }
+
+/* Cards présentation */
 div.carousel-item.active {
     display: flex;
     align-items: center;
@@ -21,7 +32,18 @@ div.card.card-jk2 {
     padding-left: 2rem;
     margin-bottom: 2rem;
     width:70%;
-    height: 70vh;
+    max-height: 70vh;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        max-height: 100vh;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        padding-left: 1rem;
+        max-height: 100vh;
+    }
 }
 a.nav-link.btn-jk-2 {
 	background: $gradient-color-button;
@@ -30,10 +52,16 @@ a.nav-link.btn-jk-2 {
 	border-radius: 2rem;
 	font-family: $primary-font;
 	font-size: 1.5rem;
-    font-weight: bold;
     width: fit-content;
     margin-top: 5rem !important;
     margin-bottom: 1rem;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-top: 1rem !important;
+    }
 }
 
 /* Cards competences */
@@ -43,6 +71,15 @@ div.card.card-small {
     text-align: left;
     padding-left: 2rem;
     margin-bottom: 6rem;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        padding-left: 1rem;
+    }
 }
 h3.jk-title3 {
     font-size: 3rem;
@@ -56,4 +93,76 @@ img.img-logo {
     max-width: 10rem;
     max-height: 10rem;
     padding: 2rem;
+}
+
+/* Cards projects */
+div.card.card-project {
+    background: linear-gradient(to right bottom, #13072E, #3f2182);
+    color: $white;
+    text-align: left;
+    margin-bottom: 2rem;
+    padding:0;
+    width: 20vw !important;
+    max-height: 70vh !important;
+
+    @media screen and (max-width: 1200px) {
+        width: 30vw !important;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 40vw !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 50vw !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+h4.jk-title4,
+.modal-title.fs-5 {
+    color:$bleu;
+    font-family: $primary-font;
+    margin-top: 0.5rem;
+}
+p.card-text.mb-1.jk-text2 {
+    font-family: $primary-font;
+}
+button.nav-link.btn-jk-project {
+    background: $gradient-color-button;
+	color: $primary;
+	padding: 1vh 2vw;
+	border-radius: 2rem;
+	font-family: $primary-font;
+	font-size: 1rem;
+    margin-left: auto;
+    width: fit-content;
+}
+div.modal-content {
+    background: linear-gradient(to left top,#5de0e6, #004aad);
+    color: $white;
+    font-family:$primary-font;
+    font-size: 1rem;
+}
+h1#staticBackdropLabel.modal-title.fs-5 {
+    color: $primary !important;
+    font-weight: bold;
+    font-family:$primary-font;
+    font-size: 1.5rem;
+    margin-top: 0.5rem !important;
+}
+button.btn.btn-secondary.jk-btn2 {
+    background: linear-gradient(to right bottom, #13072E, #3f2182);
+}
+a.link-modal {
+    color:$secondary;
+}
+img.card-img-top1 {
+    max-height: 70vh;
+
+    @media screen and (max-width: 576px) {
+        max-height: 50vh;
+    }
 }

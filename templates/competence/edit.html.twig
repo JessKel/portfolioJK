@@ -1,13 +1,14 @@
-{% extends 'base.html.twig' %}
+{% extends 'base-dashboard.html.twig' %}
 
 {% block title %}Edit Competence{% endblock %}
 
 {% block body %}
-    <h1>Edit Competence</h1>
-
-    {{ include('competence/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('app_competence_index') }}">back to list</a>
-
-    {{ include('competence/_delete_form.html.twig') }}
+<div class="container form-jk-admin">
+    <h1 class="jk-title-admin mb-5">Modifier les compétences</h1>
+        {{ include('competence/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+        {{ include('competence/_delete_form.html.twig') }}
+</div>
+<div class="mt-5">
+    <a href="{{ path('competence_index_admin') }}" class="retour">Retour</a>
+</div>
 {% endblock %}

@@ -22,6 +22,14 @@ class PresentationController extends AbstractController
         ]);
     }
 
+    #[Route('/index_admin', name: 'index_admin', methods: ['GET'])]
+    public function indexAdmin(PresentationRepository $presRepository): Response
+    {
+        return $this->render('presentation/index.html.twig', [
+            'presentations' => $presRepository->findAll(),
+        ]);
+    }
+
     #[Route('/new', name: 'new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -59,7 +67,7 @@ class PresentationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_presentation_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('presentation_index_admin', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('presentation/edit.html.twig', [
@@ -79,6 +87,6 @@ class PresentationController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('app_presentation_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('presentation_index_admin', [], Response::HTTP_SEE_OTHER);
     }
 }

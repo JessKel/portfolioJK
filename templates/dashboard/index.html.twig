@@ -1,0 +1,49 @@
+{% extends 'base-dashboard.html.twig' %}
+
+{% block title %}dashboard{% endblock %}
+
+{% block body %}
+<h1 class="jk-title-admin">Dashboard admin</h1>
+<div class="row">
+    <div class="col">
+        <h4 class="h4-jk">Qui je suis</h4>
+        <div class="card card1 border-general">
+            <div class="card-body">
+                <a href="{{ path('presentation_index_admin') }}" class="p-jk">Gestion de la présentation</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4 class="h4-jk">Compétences</h4>
+        <div class="card card2 border-general">
+            <div class="card-body">
+                <a href="{{ path('competence_index_admin') }}" class="p-jk">Gestion des compétences</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4 class="h4-jk">Projets</h4>
+        <div class="card card3 border-general">
+            <div class="card-body">
+                <a href="{{ path('project_index_admin') }}" class="p-jk">Gestion des projets</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4 class="h4-jk">Utilisateurs</h4>
+        <div class="card card1 border-general">
+            <div class="card-body">
+                <a href="{{ path('user_index') }}" class="p-jk">Gestion des utilisateurs</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4 class="h4-jk">Messages</h4>
+        <div class="card card4 border-general">
+            <div class="card-body">
+                <a href="{{ path('message_index') }}" class="p-jk">Gestion des messages <i class="bi bi-arrow-right-circle-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

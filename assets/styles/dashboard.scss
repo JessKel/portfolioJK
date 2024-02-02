@@ -1,0 +1,276 @@
+body.body-admin {
+    font-family: $primary-font;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header.header-admin {
+    background-color: $primary;
+    color: $white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav.navbar.nav-dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav-intro {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    font-family: $primary-font;
+    margin-left: 2rem;
+}
+
+.logout-btn {
+    color: $white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+aside.aside-admin {
+    background-color: $primary;
+    color: $white;
+    width: 16vw;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    border-right: $bleu;
+    position: fixed;
+}
+
+a.nav-link2 {
+    color: $white;
+    font-size: 1rem;
+    font-family: $primary-font;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+
+img.logo-jk {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 5rem;
+
+    @media screen and (max-width: 768px) {
+        max-width: 60%;
+        max-height: 60%;
+    }
+}
+
+main.container.main-admin {
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-left:20vw;
+    margin-top: 2rem !important;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 26vw !important;
+    }
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+i {
+    margin-right: 0.8rem;
+}
+
+/* Dashboard */
+h1.jk-title-admin {
+    font-family: $primary-font;
+}
+h4.h4-jk {
+    color:$white;
+    font-family: $primary-font;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+a.p-jk {
+    color:$white;
+    font-family: $primary-font;
+    text-decoration: none;
+}
+a.jk-btn-message {
+    color:$primary;
+    font-family: $primary-font;
+    text-decoration: none;
+}
+div.card.card1 {
+    background-color: $violet1;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    padding:0.8rem;
+    text-align: center;
+    width: 20vw;
+
+    @media screen and (max-width: 768px) {
+        width: 50vw !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+div.card.card2 {
+    background-color: $violet2;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    padding:0.8rem;
+    text-align: center;
+    width: 20vw;
+
+    @media screen and (max-width: 768px) {
+        width: 50vw !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+div.card.card3 {
+    background-color: $violet3;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    padding:0.8rem;
+    text-align: center;
+    width: 20vw;
+
+    @media screen and (max-width: 768px) {
+        width: 50vw !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+div.card.card4 {
+	background: $gradient-color-button;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    padding:0.8rem;
+    text-align: center;
+    width: 20vw;
+    color:$primary;
+
+    @media screen and (max-width: 768px) {
+        width: 50vw !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+
+/* Formulaires crud */
+h1.jk-title-admin.mb-5 {
+    margin-left: 1rem;
+}
+a.nav-link.btn-jk-new {
+    width:24vw;
+    background: $gradient-color-button;
+    color: $primary;
+    padding: 1vh 2vw;
+    border-radius: 2rem;
+    font-family: $primary-font;
+    font-size: 1rem;
+    margin-top:2rem;
+}
+div#competence,
+div#user_roles,
+div#project,
+div#message,
+div#user,
+div#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+    label {
+        display: block; 
+        margin-bottom: 0.5rem;
+        font-family: $primary-font;
+        color:$white;
+    }
+    input,
+    select,
+    textarea
+    {
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        width: 50vw;
+        font-family: $primary-font;
+        color: $white;
+        background: transparent;
+        border-color: $white;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0.5rem;
+    }
+}
+button.btn {
+    background: $gradient-color-button;
+    color: $primary;
+    padding: 1vh 2vw;
+    border-radius: 2rem;
+    font-family: $primary-font;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+    @media screen and (min-width: 576px) {
+        width: fit-content;
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+}
+.button-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2rem;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.button-delete {
+    width: auto;
+    margin-left: 3rem;
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0;
+    }
+}
+a.retour {
+    margin-left: 2rem;
+    font-family: $primary-font;
+    color:$white;
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+a.retour1 {
+    font-family: $primary-font;
+    color:$white;
+}
+div.mt-5 {
+    margin-left: 2rem;
+}
