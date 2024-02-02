@@ -1,11 +1,14 @@
-{% extends 'base.html.twig' %}
+{% extends 'base-dashboard.html.twig' %}
 
 {% block title %}New User{% endblock %}
 
 {% block body %}
-    <h1>Create new User</h1>
-
+<div class="container form-jk-admin">
+    <h1 class="jk-title-admin mb-5">Créer un nouvel utilisateur</h1>
     {{ include('user/_form.html.twig') }}
-
-    <a href="{{ path('app_user_index') }}">back to list</a>
+</div>
+<div class="mt-5">
+    <a class="retour1" href="{{ path('user_index') }}">Retour</a>
+</div>
 {% endblock %}
+

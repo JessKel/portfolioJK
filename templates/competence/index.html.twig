@@ -5,30 +5,30 @@
 {% block body %}
     <h1 class="jk-title-admin mb-5">Gestion des compétences</h1>
 
-    <table class="table">
+    <table class="table custom-table">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Image</th>
-                <th>Image2</th>
-                <th>Image3</th>
-                <th>Image4</th>
-                <th>Image5</th>
-                <th>Actions</th>
+                <th class="custom-text2">Name</th>
+                <th class="custom-text2">Description</th>
+                <th class="custom-text2">Image</th>
+                <th class="custom-text2">Image2</th>
+                <th class="custom-text2">Image3</th>
+                <th class="custom-text2">Image4</th>
+                <th class="custom-text2">Image5</th>
+                <th class="custom-text2">Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for competence in competences %}
             <tr>
-                <td>{{ competence.name }}</td>
-                <td>{{ competence.description }}</td>
-                <td>{{ competence.picture }}</td>
-                <td>{{ competence.picture2 }}</td>
-                <td>{{ competence.picture3 }}</td>
-                <td>{{ competence.picture4 }}</td>
-                <td>{{ competence.picture5 }}</td>
-                <td>
+                <td class="custom-text2">{{ competence.name }}</td>
+                <td class="custom-text2">{{ competence.description }}</td>
+                <td class="custom-text2"><img src="{{ asset(competence.picture) }}" width="50px" alt="logo"></td>
+                <td class="custom-text2"><img src="{{ asset(competence.picture2) }}" width="50px" alt="logo"></td>
+                <td class="custom-text2"><img src="{{ asset(competence.picture3) }}" width="50px" alt="logo"></td>
+                <td class="custom-text2"><img src="{{ asset(competence.picture4) }}" width="50px" alt="logo"></td>
+                <td class="custom-text2"><img src="{{ asset(competence.picture5) }}" width="50px" alt="logo"></td>
+                <td class="custom-text2">
                     <a href="{{ path('competence_edit', {'id': competence.id}) }}"><i class="bi bi-pencil-square"></i></a>
                     <a href="{{ path('competence_delete', {'id': competence.id}) }}"><i class="bi bi-trash"></i></a>
                 </td>

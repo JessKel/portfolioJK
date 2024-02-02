@@ -19,7 +19,6 @@ a.nav-link.btn-jk-1 {
 	border-radius: 2rem;
 	font-family: $primary-font;
 	font-size: 2rem;
-    font-weight: bold;
     width: fit-content;
     margin-bottom: 3rem;
 }
@@ -27,4 +26,27 @@ div.card.mb-3.mt-4.card-jk img {
     height: 80%;
     object-fit: cover;
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    div.card.mb-3.mt-4.card-jk {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    }
+    h1.jk-title {
+        font-size: 4rem;
+    }
+
+    p.card-text.mb-5.jk-text {
+        font-size: 1.2rem;
+    }
+
+    a.nav-link.btn-jk-1 {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    div.card.mb-3.mt-4.card-jk img {
+        height: 60%;
+    }
 }
