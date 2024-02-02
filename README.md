@@ -1,28 +1,19 @@
-# Project 3 - Starter Kit - Symfony
-
-## Change Log
-See [CHANGELOG.md](CHANGELOG.md) for more information.
+# Mon Portfolio
 
 ## Presentation
 
-This starter kit is here to easily start a repository for Wild Code School students.
+Bienvenue sur le dépôt GitHub de mon portfolio ! 🚀
 
-It's symfony website-skeleton project with some additional library (webpack, fixtures) and tools to validate code standards.
+Explorez mon univers créatif, découvrez mes compétences variées, et plongez dans les projets passionnants que j'ai réalisés. Ce portfolio est bien plus qu'une simple vitrine de mes travaux ; c'est une invitation à découvrir l'intersection entre la technologie, la créativité et l'innovation.
 
-* GrumPHP, as pre-commit hook, will run 2 tools when `git commit` is run :
+Pourquoi explorer ce portfolio ?
+🌐 Découvrez une diversité de projets allant de sites web captivants à des applications innovantes.
+💡 Explorez mes compétences techniques, de la programmation aux technologies émergentes.
+🎨 Plongez dans un design soigné et une expérience utilisateur optimale.
+Que vous soyez un recruteur cherchant un talent polyvalent ou un curieux passionné par la technologie, je suis convaincu que mon portfolio saura captiver votre attention. N'hésitez pas à explorer, partager et me contacter pour discuter de futures collaborations !
 
-    * PHP_CodeSniffer to check PSR12
-    * PHPStan focuses on finding errors in your code (without actually running it)
-    * PHPmd will check if you follow PHP best practices
 
-  If tests fail, the commit is canceled and a warning message is displayed to developper.
-
-* Github Action as Continuous Integration will be run when a branch with active pull request is updated on github. It will run :
-
-    * Tasks to check if vendor, .idea, env.local are not versionned,
-    * PHP_CodeSniffer, PHPStan and PHPmd with same configuration as GrumPHP.
-
-## Getting Started for Students
+## Getting Started
 
 ### Prerequisites
 
@@ -88,6 +79,8 @@ Some files are used to manage automatic deployments (using Docker, GitHub Action
 * [PHPMD](http://phpmd.org)
 * [Sass-Lint](https://github.com/sasstools/sass-lint)
 
+## BDD
+Vous trouvez la modélisation de la base de données selon le modèle MLD ci-après : http://localhost:8080/build/images/Modéalisation_MLD.82836cbb.png.
 
 
 ## Contributing
@@ -99,7 +92,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-Wild Code School trainers team
+Jessica Keller / Wild Code School
 
 ## License
 
