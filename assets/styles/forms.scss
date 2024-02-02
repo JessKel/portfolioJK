@@ -79,3 +79,16 @@ a.mdp_forgot {
     font-family: $primary-font;
     font-size: 0.8rem;
 }
+
+@keyframes spiral-rotation {
+    0% {
+        transform: translateY(90) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-200px) rotate(360deg);
+    }
+}
+
+.spiral-animation {
+    animation: spiral-rotation 120s linear infinite;
+}
