@@ -22,6 +22,14 @@ class CompetenceController extends AbstractController
         ]);
     }
 
+    #[Route('/index_admin', name: 'index_admin', methods: ['GET'])]
+    public function indexAdmin(CompetenceRepository $competenceRepository): Response
+    {
+        return $this->render('competence/index.html.twig', [
+            'competences' => $competenceRepository->findAll(),
+        ]);
+    }
+
     #[Route('/new', name: 'new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -33,7 +41,7 @@ class CompetenceController extends AbstractController
             $entityManager->persist($competence);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_competence_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('competence_index_admin', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('competence/new.html.twig', [
@@ -59,7 +67,7 @@ class CompetenceController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_competence_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('competence_index_admin', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('competence/edit.html.twig', [
@@ -76,6 +84,6 @@ class CompetenceController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('app_competence_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('competence_index_admin', [], Response::HTTP_SEE_OTHER);
     }
 }

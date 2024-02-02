@@ -22,6 +22,14 @@ class ProjectController extends AbstractController
         ]);
     }
 
+    #[Route('/index_admin', name: 'index_admin', methods: ['GET'])]
+    public function indexAdmin(ProjectRepository $projectRepository): Response
+    {
+        return $this->render('project/index.html.twig', [
+            'projects' => $projectRepository->findAll(),
+        ]);
+    }
+
     #[Route('/new', name: 'new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -33,7 +41,7 @@ class ProjectController extends AbstractController
             $entityManager->persist($project);
             $entityManager->flush();
 
-            return $this->redirectToRoute('project_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('project_index_admin', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('project/new.html.twig', [
@@ -59,7 +67,7 @@ class ProjectController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('project_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('project_index_admin', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('project/edit.html.twig', [
@@ -76,6 +84,6 @@ class ProjectController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('project_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('project_index_admin', [], Response::HTTP_SEE_OTHER);
     }
 }

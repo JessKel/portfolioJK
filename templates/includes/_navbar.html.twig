@@ -7,6 +7,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerJK">
+    {% if is_granted('ROLE_USER') %}
         <ul class="nav mx-auto">
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('presentation_index') }}">Qui je suis</a>
@@ -17,12 +18,33 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('message_new') }}">Contactez-moi</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('dashboard') }}">Dashboard</a>
+            </li>
         </ul>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link btn-jk" href="{{ path('app_login') }}">Connexion <i class="bi bi-arrow-right-circle-fill"></i></a>
+                <a class="nav-link btn-jk" href="{{ path('app_logout') }}">Déconnection <i class="bi bi-arrow-right-circle-fill"></i></a>
             </li>
         </ul>
+    {% else %}
+            <ul class="nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('presentation_index') }}">Qui je suis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('project_index') }}">Mes projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('message_new') }}">Contactez-moi</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link btn-jk" href="{{ path('app_login') }}">Connexion <i class="bi bi-arrow-right-circle-fill"></i></a>
+                </li>
+            </ul>
+    {% endif %}
     </div>
   </div>
 </nav>
