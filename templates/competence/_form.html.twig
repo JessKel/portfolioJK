@@ -1,5 +1,52 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <div class="button-container">
-        <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+<div id="message-form">
+    <div class="form-group">
+        {{ form_label(form.name) }}
+        {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.description) }}
+        {{ form_widget(form.description, {'attr': {'class': 'form-control'}}) }}
+    </div>
+    {{ form_label(form.picture) }}
+    <div class="image-field">
+        {{ form_widget(form.picture, { 'attr': {'class': 'image-input'} }) }}
+        {% if form.picture.vars.value is not null %}
+            <img src="{{ asset(form.picture.vars.value) }}" alt="Image" class="preview-image" width:"50px">
+        {% endif %}
+    </div>
+    {{ form_label(form.picture2) }}
+    <div class="image-field">
+        {{ form_widget(form.picture2, { 'attr': {'class': 'image-input'} }) }}
+        {% if form.picture.vars.value is not null %}
+            <img src="{{ asset(form.picture2.vars.value) }}" alt="Image" class="preview-image" width:"50px">
+        {% endif %}
+    </div>
+    {{ form_label(form.picture3) }}
+    <div class="image-field">
+        {{ form_widget(form.picture3, { 'attr': {'class': 'image-input'} }) }}
+        {% if form.picture.vars.value is not null %}
+            <img src="{{ asset(form.picture3.vars.value) }}" alt="Image" class="preview-image" width:"50px">
+        {% endif %}
+    </div>
+    {{ form_label(form.picture4) }}
+    <div class="image-field">
+        {{ form_widget(form.picture4, { 'attr': {'class': 'image-input'} }) }}
+        {% if form.picture.vars.value is not null %}
+            <img src="{{ asset(form.picture4.vars.value) }}" alt="Image" class="preview-image" width:"50px">
+        {% endif %}
+    </div>
+    {{ form_label(form.picture5) }}
+    <div class="image-field">
+        {{ form_widget(form.picture5, { 'attr': {'class': 'image-input'} }) }}
+        {% if form.picture.vars.value is not null %}
+            <img src="{{ asset(form.picture5.vars.value) }}" alt="Image" class="preview-image" width:"50px">
+        {% endif %}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.user) }}
+        {{ form_widget(form.user, {'attr': {'class': 'form-control'}}) }}
+    </div>
+    <div class="button-container2">
+        <button class="btn btn-admin-form">{{ button_label|default('Enregistrer') }}</button>
 {{ form_end(form) }}
