@@ -17,6 +17,10 @@ class CompetenceType extends AbstractType
             ->add('name')
             ->add('description')
             ->add('picture')
+            ->add('picture2')
+            ->add('picture3')
+            ->add('picture4')
+            ->add('picture5')
             ->add('user', EntityType::class, [
                 'class' => User::class,
         'choice_label' => 'id',

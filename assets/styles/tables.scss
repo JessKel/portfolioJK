@@ -25,6 +25,12 @@ td.custom-text3 {
     color: $white !important;
     font-family: $primary-font !important;
 }
+th.custom-text4,
+td.custom-text4 {
+    background: linear-gradient(to right bottom, #0097B2, #0097B2);
+    color: $primary !important;
+    font-family: $primary-font !important;
+}
 a {
     color:$white !important;
 }
