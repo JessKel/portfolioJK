@@ -178,7 +178,7 @@ h1.jk-title-admin.mb-5 {
     margin-left: 1rem;
 }
 a.nav-link.btn-jk-new {
-    width:24vw;
+    width:fit-content;
     background: $gradient-color-button;
     color: $primary;
     padding: 1vh 2vw;
@@ -232,6 +232,7 @@ button.btn {
     width: 100%;
     margin-top: 2rem;
     margin-right: 2rem;
+    font-weight: bold;
 
     @media screen and (min-width: 576px) {
         width: fit-content;
@@ -273,4 +274,33 @@ a.retour1 {
 }
 div.mt-5 {
     margin-left: 2rem;
+}
+img.preview-image {
+    width:50px !important;
+}
+button.btn-admin-form {
+    background: $gradient-color-button;
+    color: $primary;
+    padding: 1vh 2vw;
+    border-radius: 2rem;
+    font-family: $primary-font;
+    font-size: 1rem;
+    width: fit-content !important;;
+    margin-right: 2rem;
+    font-weight: bold;
+
+    @media screen and (min-width: 576px) {
+        width: fit-content;
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+}
+.button-container {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
