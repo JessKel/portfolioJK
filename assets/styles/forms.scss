@@ -52,6 +52,10 @@ h1.jk-title.text-left {
     }
 }
 
+img.img-fluid.rounded-end.spiral-animation {
+    margin-top: 8rem;
+}
+
 /* Registration form */
 h2.subtitle {
     color: $bleu;
@@ -82,7 +86,7 @@ a.mdp_forgot {
 
 @keyframes spiral-rotation {
     0% {
-        transform: translateY(90) rotate(0deg);
+        transform: translateY(0) rotate(0deg);
     }
     100% {
         transform: translateY(-200px) rotate(360deg);
@@ -90,5 +94,5 @@ a.mdp_forgot {
 }
 
 .spiral-animation {
-    animation: spiral-rotation 120s linear infinite;
+    animation: spiral-rotation 130s linear infinite;
 }

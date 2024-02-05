@@ -12,6 +12,17 @@ Pourquoi explorer ce portfolio ?
 🎨 Plongez dans un design soigné et une expérience utilisateur optimale.
 Que vous soyez un recruteur cherchant un talent polyvalent ou un curieux passionné par la technologie, je suis convaincu que mon portfolio saura captiver votre attention. N'hésitez pas à explorer, partager et me contacter pour discuter de futures collaborations !
 
+## BDD
+Vous trouvez la modélisation de la base de données selon le modèle MLD ci-après : http://localhost:8080/build/images/Modéalisation_MLD.82836cbb.png.
+
+## WIFRAMES
+Vous trouverez ci-dessous les liens vers les wireframes du site :
+Format desktop : http://localhost:8080/build/images/Wireframes_portfolio_JK.3c54f1ac.png
+Format mobile partie 1 : http://localhost:8080/build/images/Wireframes_portfolio_JK_mobile1.8fa7d938.png
+Format mobile partie 2 : http://localhost:8080/build/images/Wireframes_portfolio_JK_mobile2.0aecb19b.png
+
+## BACKLOG
+Vous trouvez ci-après le lien vers mon backlog : http://localhost:8080/build/images/Backlog_Portfolio_JK.c874800d.pdf
 
 ## Getting Started
 
@@ -78,9 +89,6 @@ Some files are used to manage automatic deployments (using Docker, GitHub Action
 * [PHPStan](https://github.com/phpstan/phpstan)
 * [PHPMD](http://phpmd.org)
 * [Sass-Lint](https://github.com/sasstools/sass-lint)
-
-## BDD
-Vous trouvez la modélisation de la base de données selon le modèle MLD ci-après : http://localhost:8080/build/images/Modéalisation_MLD.82836cbb.png.
 
 
 ## Contributing
